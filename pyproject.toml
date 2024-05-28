@@ -3,7 +3,7 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "autoclipper"
+name = "gradient-autoclipper"
 version = "1.0.0"
 description = "Clip gradient norm automatically"
 readme = "README.md"
@@ -12,9 +12,9 @@ license = {file = "LICENSE"}
 keywords = ["pytorch", "gradient clipping", "automl"]
 dependencies = [
     "torch>=2.2.1",
-    "pytorch_optimizer @ git+https://github.com/kozistr/pytorch_optimizer.git@48030b5f6ac2efc0c3598df6620f316b9c625ea7"
+    "pytorch_optimizer>=3.0.0"
 ]
 requires-python = ">=3.8"
 
 [project.urls]
-Homepage = "https://github.com/michaldyczko/autoclipper"
+Homepage = "https://github.com/michaldyczko/gradient-autoclipper"
