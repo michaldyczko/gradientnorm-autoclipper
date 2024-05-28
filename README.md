@@ -1,6 +1,6 @@
-# AutoClippedOptimizer
+# AutoClipper
 
-AutoClippedOptimizer is a Python factory function that returns an optimizer class with automatic gradient clipping. This feature can help to stabilize training in certain situations by limiting the magnitude of gradient updates.
+AutoClipper is a Python factory function that returns an optimizer class with automatic gradient clipping. This feature can help to stabilize training in certain situations by limiting the magnitude of gradient updates.
 
 The implementation is inspired by the paper "AutoClip: Adaptive Gradient Clipping for Source Separation Networks" (<https://arxiv.org/abs/2007.14469>) with two key differences:
 
@@ -10,7 +10,7 @@ The implementation is inspired by the paper "AutoClip: Adaptive Gradient Clippin
 ## Usage
 
 ```python
-from AutoClippedOptimizer import AutoClippedOptimizer
+from autoclipper import AutoClippedOptimizer
 
 # Create a new optimizer class with automatic gradient clipping
 optimizer_cls = AutoClippedOptimizer(optimizer_cls, q=0.1, window=200, max_norm=None)
