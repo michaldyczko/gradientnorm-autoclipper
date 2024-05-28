@@ -3,7 +3,7 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "gradient-autoclipper"
+name = "gradientnorm-autoclipper"
 version = "1.0.0"
 description = "Clip gradient norm automatically"
 readme = "README.md"
@@ -17,4 +17,4 @@ dependencies = [
 requires-python = ">=3.8"
 
 [project.urls]
-Homepage = "https://github.com/michaldyczko/gradient-autoclipper"
+Homepage = "https://github.com/michaldyczko/gradientnorm-autoclipper"
